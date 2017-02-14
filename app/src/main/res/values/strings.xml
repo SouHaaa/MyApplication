@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_remplir_champs_to_connect">remplirChampsToConnect</string>
+</resources>

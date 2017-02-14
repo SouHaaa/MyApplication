@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_remplir_champs_to_connect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sahso.myapplication.remplirChampsToConnect"
+    tools:showIn="@layout/activity_remplir_champs_to_connect">
+
+<android.inputmethodservice.ExtractEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/nom"
+    android:layout_centerHorizontal="false"
+    android:layout_marginTop="20dp"
+    android:background="@color/silver"
+    android:gravity="center"
+    android:hint="nom"
+    android:inputType="text"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+<android.inputmethodservice.ExtractEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/prenom"
+    android:layout_centerHorizontal="false"
+    android:layout_marginTop="20dp"
+    android:background="@color/silver"
+    android:gravity="center"
+    android:hint="prenom"
+    android:inputType="text"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:layout_below="@+id/nom"/>
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="20dp"
+        android:background="@color/silver"
+        android:gravity="center"
+        android:hint="adresse mail"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/prenom"
+      />
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="20dp"
+        android:background="@color/silver"
+        android:gravity="center"
+        android:hint="*********"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/mail"
+        />
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/metier"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="20dp"
+        android:background="@color/silver"
+        android:gravity="center"
+        android:hint="travail"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/password"
+        />
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/local"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="20dp"
+        android:background="@color/silver"
+        android:gravity="center"
+        android:hint="Local de travail "
+        android:inputType="text"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/metier"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:text="save"
+
+        android:textSize="30dp"
+        android:layout_below="@+id/local"/>
+
+
+</RelativeLayout>
